@@ -1,1 +1,1 @@
-This is a demo chat real time use reactjs, mobx and websocket
+This is my personal blog about everything
