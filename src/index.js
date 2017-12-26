@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import HomePage from './containers/HomePage/HomePage';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
 
-ReactDOM.render(<HomePage />, document.getElementById('root'));
+// Load style
+import './index.css';
+
+ReactDOM.render((
+    <BrowserRouter basename='/'>
+        <Routes/>
+    </BrowserRouter>
+), document.getElementById('root'));
+
 registerServiceWorker();
