@@ -1,16 +1,17 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './Header';
+import TopHeader from './TopHeader';
 import Footer from './Footer';
 
 class WrapperComponent extends React.Component {
     render() {
         return (
-            <MuiThemeProvider>
+            <div>
+                <TopHeader/>
                 <Header/>
                 {this.props.children}
                 <Footer/>
-            </MuiThemeProvider>
+            </div>
         );
     }
 }

@@ -5,10 +5,11 @@ import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
 
 // Load style
-import './index.css';
+import './assets/css/yummy/yummy.css';
+import './assets/css/style.css';
 
 ReactDOM.render((
-    <BrowserRouter basename='/'>
+    <BrowserRouter>
         <Routes/>
     </BrowserRouter>
 ), document.getElementById('root'));

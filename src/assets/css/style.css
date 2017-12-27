@@ -1,0 +1,19 @@
+a:hover {
+  text-decoration: none;
+}
+/* NAVIGATION */
+.navbar .navbar-nav .dropdown .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  transition: .5s;
+  -webkit-transition: .5s;
+  transform: translate(0, 10px);
+  -webkit-transform: translate(0, 10px);
+}
+.navbar .navbar-nav .dropdown:hover > .dropdown-menu {
+  -webkit-transform: translate(0, -15px);
+  transform: translate(0, -15px);
+  opacity: 1;
+  visibility: visible;
+}
